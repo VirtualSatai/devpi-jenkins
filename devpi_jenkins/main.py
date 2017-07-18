@@ -36,7 +36,7 @@ def devpiserver_on_upload_sync(log, application_url, stage, project, version):
         VIRTUALENVTARURL=(
             application_url +
             "/root/pypi/+f/f61/cdd983d2c4e6a/"
-            "virtualenv-1.11.6.tar.gz"),
+            "virtualenv-1.15.0.tar.gz"),
         TESTSPEC='%s==%s' % (project, version),
         DEVPI_INSTALL_INDEX=application_url + "/" + stage.name + "/+simple/")
     inputfile = py.io.BytesIO(source.encode("ascii"))
